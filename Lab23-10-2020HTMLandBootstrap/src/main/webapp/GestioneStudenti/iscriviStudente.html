@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center">
+		 <h4>Form per l'iscrizione degli studenti</h4>
+	</div>
+	<!-- Nella action indico la destinazione di dove devono andare a finire i dati -->
+	<form class="container" method="GET" action="effettuaIscrizione">
+	
+		<div class="form-group">
+			<label for="Matricola">Inserisci Matricola</label>
+			<input class="form-control" type="text" id="Matricola" />
+		</div>
+		
+		<div class="form-group">
+			<label for="Nome">Inserisci Nome</label>
+			<input class="form-control" type="text" id="Nome"/>
+		</div>
+		
+		<div class="form-group">
+			<label for="Cognome">Inserisci Cognome</label>
+			<input class="form-control" type="text" id="Cognome"/>
+		</div>
+		
+		<div class="form-group">
+			<label for="Luogo di Nascita">Luogo di Nascita</label>
+			<input class="form-control" type="text" id="Luogo di Nascita"/>
+		</div>
+		
+		<div class="form-group">
+			<label for="Data di Nascita">Data di Nascita</label>
+			<input class="form-control" type="datetime-local" id="Data di Nascita"/>
+		</div>
+		
+		<button class="btn btn-primary">Verifica dati inseriti</button>
+		
+		<!-- quando clicco su submit faccio una richiesta di tipo GET http in cui invio i dati ad una risorsa indicata nell'intestazione del form in action(action="risorsa" -->
+		<input class="btn btn-success" value="Iscrivi studente" type="submit"></input>
+		
+	</form>
+	
+</body>
+</html>
