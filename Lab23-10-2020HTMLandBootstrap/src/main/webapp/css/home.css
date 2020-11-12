@@ -14,7 +14,7 @@ h3 {
 }
 
 .jumbotron {
-	background-color:red;
+	background-color:cyan;
 }
 
 article {
@@ -26,11 +26,14 @@ article {
 article+article {
 	text-decoration: underline; /*sottolineato*/
 }
+#p2 {
+	text-decoration: underline; 
+}
 #p1 {
 	text-decoration: underline;    
 	/*text-shadow: 15px 5px blue;effetto ombreggiatura commentato perche graficamente brutto*/
 }
-
-.specifico {
-	text-decoration: underline;
-}
+/*line-through serve per barrare qualcosa se metto qualcosa prima di .specifico gli sto dicendo che quello che vado a fare lo faccio sul tag p ad esempio che ha come classe specifico*/
+/*p.specifico {
+	text-decoration: line-through;
+}*/
