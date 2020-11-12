@@ -7,6 +7,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- per importare le modifiche scritte nel css -->
+	<link rel="stylesheet" href="css/home.css" type="text/css" />
 </head>
 <body>
 
@@ -64,50 +66,51 @@
   <h3>
 	Benvenuti nel portale di gestione delle Segreterie studenti
   </h3>
-  
-  <p>
+  <!-- id è un identificativo di un determinato tag o classe e in css(utilizzando prima di p1 il #(si usa per id)) possiamo utilizzare propio l'identificativo per poter apportare modifiche grafiche(di stile) -->
+  <p id="p1">
 	Utilizza il menu in alto per navigare tra le varie sezioni della pagina
   </p>
   
-  <p>
+  <p p="p2">
 	Ti auguriamo una felice navigazione
   </p>
-  <div class="row">
+  <section class="row">
   
-  	<div class="col-lg-6 col-md-6">
+  	<article class="col-lg-6 col-md-6">
 		  <section class="jumbotron">
 		  	<h4>Dicono di noi</h4>
 		  	<p>La segreteria è un servizio di riferimento che serve per...</p>
 		  </section>
-    </div>
+    </article>
     
-	<div class="col-lg-6 col-md-6">	  
+	<article class="col-lg-6 col-md-6">	  
 		  <section class="jumbotron">
 		  	<h4>Centro ICT di Ateneo</h4>
 		  	<p>Dalla pagina accessibile da questo <a href= "https://www.unical.it/portale/strutture/centri/centroict/ ">link</a></p>
 		  </section>
-	</div>
+	</article>
 	
-  </div>
+  </section>
   
+ <!-- O mettiamo div o mettiamo section e article l'effetto grafico rimane invariato pero section e article
+ sono tag semantici e questo vuol dire che se leggo section ho deciso di considerare quell area come una section --> 
+  <section class="row">
   
-  <div class="row">
-  
-  	<div class="col-lg-6 col-md-6">
-		  <section class="jumbotron">
+  	<article class="col-lg-6 col-md-6">
+		  <section class="jumbotron specifico">
 		  	<h4>Dicono di noi</h4>
 		  	<p>La segreteria è un servizio di riferimento che serve per...</p>
 		  </section>
-    </div>
+    </article>
     
-	<div class="col-lg-6 col-md-6">	  
+	<article class="col-lg-6 col-md-6">	  
 		  <section class="jumbotron">
 		  	<h4>Centro ICT di Ateneo</h4>
-		  	<p>Dalla pagina accessibile da questo <a href= "https://www.unical.it/portale/strutture/centri/centroict/ ">link</a></p>
+		  	<p class="specifico">Dalla pagina accessibile da questo <a href= "https://www.unical.it/portale/strutture/centri/centroict/ ">link</a></p>
 		  </section>
-	</div>
+	</article>
 	
-  </div>
+  </section>
   
   <footer>
   		Web Computing 2021 Ltd.

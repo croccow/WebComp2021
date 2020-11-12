@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+/* se vogliamo modificare tutti gli h1 che sono nei div ad esempio basta fare
+div h1 {....} e verranno modificati solo gli h1 dento i div quelli fuori non avranno nessun tipo
+di modifica  questo serve se si vuole modificare un qualcosa in particolare lasciando gli altri inalterati
+*/ 
+/* se voglio modificare un figlio "diretto" cioe che non è in nessun altro tag se non quello che indichiamo
+bisogna fare ad esempio body > h3 e va a modificare tutti gli h3 che sono figli diretti di body*/
+h1 {
+	color:red;
+}
+
+h3 {
+	color:blue;
+}
+
+.jumbotron {
+	background-color:red;
+}
+
+article {
+	left:100px;
+	font-family:verdana;
+	font-size:20px;
+}
+/*gli sto dicendo con la + che deve lavorare sul secondo article che si trova allo stesso livello del primo(sono fratelli) ignorando il primo*/
+article+article {
+	text-decoration: underline; /*sottolineato*/
+}
+#p1 {
+	text-decoration: underline;    
+	/*text-shadow: 15px 5px blue;effetto ombreggiatura commentato perche graficamente brutto*/
+}
+
+.specifico {
+	text-decoration: underline;
+}
