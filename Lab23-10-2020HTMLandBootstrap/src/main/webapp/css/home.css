@@ -26,6 +26,18 @@ article {
 article+article {
 	text-decoration: underline; /*sottolineato*/
 }
+/*
+se faccio modifiche sullo stesso tag o classe o quel che è vanno in conflitto e si prende solo una modifica delle 2
+se aggiungo infatti questo pezzo di sotto mi sparisce la sottolineatura e mi barra gli elementi indicati
+se abbiamo a che fare come in questo caso article+article e article+article si prenderà la seconda modifica che faccio 
+mentre se abbiamo ad esempio article+article e una classe che fanno la modifica sulla stessa porzione html si prende la modifica della classe perchè è piu specifica
+se ho un id, una classe e un tag che apportano modifiche sulla stessa porzione vince l'id perchè è molto piu specifico della classe
+la classe prende piu elementi mentre l'id si riferisce a un elemento 
+
+se metto !important prima del ; nell'istruzione di modifica gli sto dicendo che quella modifica ha priorità su tutto quindi se ci sono 2 modifiche sulla stessa cosa ha priorità assoluta quella con important
+article+article {
+	text-decoration: line-through;
+}*/
 #p2 {
 	text-decoration: underline; 
 }
